@@ -10,15 +10,15 @@ import pprint
 import collections
 
 
-def main():
+def rename():
 
     file_input = input('File Name: ')
 
-    with open(file_input, 'r') as info:
+    with open(file_input,'r') as info:
         count = collections.Counter(info.read().upper())
 
     value = pprint.pformat(count)
     print(value)
 
 if __name__ == "__main__":
-    main()
+    rename()
